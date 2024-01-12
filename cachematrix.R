@@ -4,7 +4,7 @@ Put comments here that give an overall description of what your
 ## Function to create a special matrix object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
   # Initialize the matrix and inverse as NULL
-  mat <- x
+  mat <- y
   inv <- NULL
   
   # Function to set the matrix
@@ -37,12 +37,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Function to compute the inverse of a matrix using caching
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(y, ...) {
   # Get the matrix from the cache matrix object
-  mat <- x$getMatrix()
+  mat <- y$getMatrix()
   
   # Get the cached inverse or compute it if not cached
-  inv <- x$getInverse()
+  inv <- y$getInverse()
   
   # Return the computed inverse
   return(inv)
